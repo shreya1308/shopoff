@@ -1,0 +1,40 @@
+<header><font color="black">Shop Off</font></header>
+ <!--<h1> <font color="white" text-alignment="centre">CREATE ACCOUNT</font> <h1>-->
+ <h1></h1>
+ <body style="background-color:purple">
+	<form  action ="/shre/create" method="POST" class="form-signin" id="form-signup">
+		
+	<% if(flash && flash.err) { %>
+	<ul class="alert alert-success">
+	<% Object.keys(flash.err).forEach(function(error) { %>
+		<li><%- JSON.stringify(flash.err[error]) %></li>
+	<% }) %>
+</ul>
+<% } %>
+
+<div align="center">
+
+		<div class="control-group">
+		 <input type="text" class="form-control" placeholder="your name" name="name"><br><br>
+		 </div>
+ 		<div class="control-group">
+		 <input type="text" class="form-control" placeholder="your title" name="title"><br><br>
+		</div>	
+		<div class="control-group">
+		<input type="text" class="form-control" placeholder="email address" name="email"><br><br>
+		</div>
+ 		<div class="control-group">
+		 <input type="password" class="form-control" placeholder="password" name="password" id="password"><br><br>
+		 </div>
+		 <div class="control-group">
+		 <input type="password" class="form-control" placeholder="password confrimation" name="confirmation"><br><br>
+		 </div>
+		<input type="submit" class="btn btn-lg btn-primary btn-block" value="create account"/>
+		<input type="hidden" name="_csrf" value="<%= _csrf %>"/>
+		</div>
+	</form>
+ 
+
+<!--<p>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>-->
+ 
+

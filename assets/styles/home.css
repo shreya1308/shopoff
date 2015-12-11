@@ -1,0 +1,38 @@
+header
+{
+	text-align: center;
+	font: fantasy;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+
+
+}
+.container
+{
+	background: white;
+    color: #fff;
+    opacity: 0.4;
+    height: 100%;
+}
+.x
+{
+	background-image: url('shopping background.jpg');
+	background-size: 100%;
+}
+a
+{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+li
+{
+	width: 60px;
+	list-style: none;
+	padding: 10px;
+	border:1px solid white;
+	display: inline-block;
+	background-color: black;
+}
